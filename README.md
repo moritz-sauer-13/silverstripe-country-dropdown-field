@@ -14,7 +14,7 @@ A simple country dropdown field for SilverStripe forms.
 
 ## Requirements
 
-- Silverstripe ^5
+- Silverstripe ^6
 
 ## Installation
 
