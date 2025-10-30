@@ -2,7 +2,6 @@
 
 namespace Dynamic\CountryDropdownField\Fields;
 
-use SilverStripe\Dev\Debug;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\i18n\Data\Intl\IntlLocales;
 
@@ -32,10 +31,8 @@ class CountryDropdownField extends DropdownField
     /**
      * StateDropdownField constructor.
      * @param string $name
-     * @param null $title
      * @param null|array $source
      * @param string $value
-     * @param null $form
      */
     public function __construct($name, $title = null, $source = [], $value = '', $form = null)
     {
@@ -54,7 +51,7 @@ class CountryDropdownField extends DropdownField
      * @param bool $includeProvinces
      * @return $this
      */
-    public function setCountries($countries = [])
+    public function setCountries($countries = []): static
     {
         if ($countries !== (array)$countries) {
             trigger_error(
@@ -63,7 +60,7 @@ class CountryDropdownField extends DropdownField
             );
         }
 
-        $globalDefaults = empty($countries);
+        $globalDefaults = $countries === [];
 
         if ($globalDefaults) {
             $countries = $this->getDefaultCountriesList();
