@@ -1,3 +1,5 @@
+This is a fork from dynamic/silverstripe-country-dropdown-field to support SS6 
+
 # Country Dropdown Field
 
 A simple country dropdown field for SilverStripe forms.
