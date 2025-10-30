@@ -1,5 +1,5 @@
 {
-    "name": "dynamic/silverstripe-country-dropdown-field",
+    "name": "moritz-sauer-13/silverstripe-country-dropdown-field",
     "description": "A simple country dropdown field for SilverStripe forms",
     "license": "BSD-3-Clause",
     "type": "silverstripe-vendormodule",
@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "silverstripe/recipe-core": "^5.0"
+        "silverstripe/recipe-core": "^6"
     },
     "require-dev": {
         "silverstripe/recipe-testing": "^3",
